@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 
 export const EmailSignupForm: React.FC = () => {
@@ -19,7 +20,7 @@ export const EmailSignupForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-[456px] text-sm leading-none mt-4">
+    <form onSubmit={handleSubmit} className="w-full max-w-[456px] text-sm leading-none">
       <div className="flex w-full gap-2.5 text-center justify-center max-md:max-w-full">
         <input
           type="email"
@@ -37,17 +38,17 @@ export const EmailSignupForm: React.FC = () => {
           {isSubmitting ? "Signing Up..." : "Sign Up Now"}
         </button>
       </div>
-      <div className="text-white font-normal mt-2.5 max-md:max-w-full">
-        <span className="font-['DM_Sans',_-apple-system,_Roboto,_Helvetica,_sans-serif] text-[rgba(255,255,255,1)]">
+      <div className="text-white font-normal mt-2 max-md:max-w-full">
+        <span className="font-['DM_Sans',_-apple-system,_Roboto,_Helvetica,_sans-serif] text-white">
           We care about your data in our{" "}
         </span>
         <a 
           href="#privacy-policy" 
-          className="font-['DM_Sans',_-apple-system,_Roboto,_Helvetica,_sans-serif] underline text-[rgba(255,255,255,1)] hover:text-blue-300 transition-colors"
+          className="font-['DM_Sans',_-apple-system,_Roboto,_Helvetica,_sans-serif] underline text-white hover:text-blue-300 transition-colors"
         >
           privacy policy
         </a>
-        <span className="font-['DM_Sans',_-apple-system,_Roboto,_Helvetica,_sans-serif] text-[rgba(255,255,255,1)]">
+        <span className="font-['DM_Sans',_-apple-system,_Roboto,_Helvetica,_sans-serif] text-white">
           .
         </span>
       </div>
