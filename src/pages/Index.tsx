@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Navbar } from "@/components/landing/Navbar";
 import { HeroSection } from "@/components/landing/HeroSection";
@@ -10,7 +11,7 @@ const Index: React.FC = () => {
 
   return (
     <main className="bg-white overflow-hidden">
-      <div className="flex flex-col relative min-h-[900px] w-full items-center pt-3 px-20 max-md:max-w-full max-md:px-5">
+      <div className="flex flex-col relative w-full items-center pt-3 px-20 max-md:max-w-full max-md:px-5">
         {/* Background Image */}
         <img
           src={backgroundImageUrl}

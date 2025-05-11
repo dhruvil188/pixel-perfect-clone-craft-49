@@ -1,3 +1,4 @@
+
 import React from "react";
 
 interface ProductShowcaseProps {
@@ -6,11 +7,11 @@ interface ProductShowcaseProps {
 
 export const ProductShowcase: React.FC<ProductShowcaseProps> = ({ imageSrc }) => {
   return (
-    <div className="w-full mt-12 max-md:mt-10">
+    <div className="w-full mt-12 max-md:mt-10 pb-0">
       <img
         src={imageSrc}
         alt="SynTask product dashboard"
-        className="aspect-[2.67] object-contain w-full ml-[34px] mr-[33px] max-md:max-w-full max-md:mr-2.5"
+        className="aspect-[2.67] object-cover w-full overflow-hidden"
       />
     </div>
   );
